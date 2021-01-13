@@ -12,6 +12,7 @@ function App() {
   let [cardCount , setCardCount ] = useState([]);
   let [count , setCount ] =useState(1);
   
+  
   const addAnotherList = ()=>{
     setCount(count + 1);
     setCardCount((preValue)=>{
@@ -33,7 +34,7 @@ function App() {
         
         {
           cardCount.map((item , index)=>{
-            return ( <Card key = {index} /> )
+            return ( <Card id = {index} key = {index} /> )
           })
         }
 
