@@ -17,7 +17,7 @@ const Card =  (probs)=> {
     console.log(card_id + "hello" + li );
 
     li.style.display = "flex";
-    e.target.appendChild(li)
+    e.target.appendChild(li);
     
   }
 
